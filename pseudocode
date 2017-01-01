@@ -1,3 +1,5 @@
+	
+	
 	The program eAndPiGenerator.c generates the irrational numbers e ("euler"),
 and pi, up to a given number of significant digits which is provided with 
 the original proposal. The program uses the infinite taylor series to generate
