@@ -1,7 +1,10 @@
-<h1>C-euler-and-pi-generator</h1>
-Simple c program that generates the mathematical numbers pi and e up 
+C-euler-and-pi-generator
+
+The following program generates the mathematical numbers pi and e up 
 to a desired number of significant digits using only the sum of the 
-infinite Taylor series as the method of generation.
+infinite Taylor series as the method of generation. 
+
+A common program output appears as follows:
 
       Using the infinite taylor series to calculate e:
 +------------------------------------------------------------+
@@ -13,8 +16,6 @@ infinite Taylor series as the method of generation.
 | Number of terms calculated:  13                            |
 | Time used to compute:   0.0090000000000000010547119 ms     |
 +------------------------------------------------------------+
-
-
 
      Using the infinite taylor series to calculate pi:
 +------------------------------------------------------------+
