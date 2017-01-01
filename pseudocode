@@ -1,0 +1,85 @@
+	The program eAndPiGenerator.c generates the irrational numbers e ("euler"),
+and pi, up to a given number of significant digits which is provided with 
+the original proposal. The program uses the infinite taylor series to generate
+both numbers by adding consecutive terms until a certain threshold is met.
+
+	The program as is, generates e accurately up to 10 digits and pi up to 6
+digits. Notice that the program is set up to handle not only these digits but
+any number of digits the user desires, all it would take is to alter the values
+of EULER_SIGNIF_DIGITS and PI_SIGNIF_DIGITS with the desire values to generate 
+e and pi with a user-decided variable number of significant digits. 
+
+	After generating each number the program prints the accurate value of the
+number taken from its math.h constant and contrasts it with the generated 
+value, it shows the number of digits of accuracy being used, and marks where 
+both values(the math.h and the generated value) start to diverge. After this
+the program prints the number of terms used to generate the number with the 
+required significant digit accuracy and the time it took to generate it.
+This process is repeated for both numbers, first with e and later with PI.
+
+The program functionality can be described by the following pseudocode:
+
+Logic program execution:
+
+INITIALIZE AND DEFINE CONSTANTS
+	EULER_SIGNIF_DIGITS
+	PI_SIGNIF_DIGITS
+	VAL_OF_PI
+	VAL_OF_EULER
+	...
+
+computeEuler(){
+
+	RECCORD TIME:
+		timebegin = current time.
+
+	GENERATE: 
+		threshold.
+
+	REPEAT
+		ADD: taylor series for e.
+		COUNT: taylor terms used.
+
+	WHILE
+		threshold is not met.
+
+	RECCORD TIME:
+		timeend current time.
+
+	PRINT: 
+		accurate value of e.
+		generated value of e.
+		mark where they diverge.
+		series terms used.
+		time used to generate the number.
+
+}
+
+computePI(){
+
+	RECCORD TIME:
+		timebegin = current time.
+
+	GENERATE: 
+		threshold.
+
+	REPEAT
+		ADD: taylor series for PI.
+		COUNT: taylor terms used.
+
+	WHILE
+		threshold is not met.
+
+	RECCORD TIME:
+		timeend current time.
+
+	PRINT: 
+		accurate value of PI.
+		generated value of PI.
+		mark where they diverge.
+		series terms used.
+		time used to generate the number.
+
+}
+
+END
